@@ -1,5 +1,5 @@
-gclog date split chan
-=====================
+gclog date split kun
+====================
 
 Split Oracle JDK7's `gc.log` by date.
 
