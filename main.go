@@ -70,6 +70,7 @@ func write(path string, fileName string, log []string) {
 
 func do(c *cli.Context) {
 	if len(c.Args()) == 0 {
+		log.Fatal("gc.log file path required.")
 		os.Exit(0)
 	}
 	log.Println("Start.")
