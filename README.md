@@ -17,7 +17,7 @@ But I want to split by date.
 For example, above log would be like followings.
 
 ```
-$ gclogdatesplitchan read /path/to/gc.log
+$ go-gclogdatesplitkun read /path/to/gc.log
 $ ls
 gc.log
 2015-3-23_gc.log
@@ -28,7 +28,7 @@ Usage
 -----
 
 ```
-$ git checkout https://github.com/heavenshell/go-gclogdatesplitchan.git
+$ git checkout https://github.com/heavenshell/go-gclogdatesplitkun.git
 $ go build
-$ ./go-gclogdatesplitchan read /path/to/gc.log
+$ ./go-gclogdatesplitkun read /path/to/gc.log
 ```
