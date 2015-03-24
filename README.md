@@ -14,7 +14,7 @@ Oracle JDK7's `gc.log` lotated by file size.
 Above gc.log are contains `2015-03-24`'s log and `2015-03-25`'s log.
 But I want to split by date.
 
-For example, above log would be like followings.
+For example, above logs would be like followings after this program executed.
 
 ```
 $ go-gclogdatesplitkun read /path/to/gc.log
