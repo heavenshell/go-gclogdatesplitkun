@@ -55,4 +55,6 @@ func TestWriteShouldGenerateNewFile(t * testing.T) {
 			t.Fatalf("Remove failed.")
 		}
 	}
+
+	logs = map[string][]string{}
 }

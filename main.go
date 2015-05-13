@@ -32,14 +32,12 @@ func read(targetFileName string) {
 	_, err := os.Stat(targetFileName)
 	if err != nil {
 		log.Fatal(err)
-		os.Exit(1)
 	}
 
 	var fp *os.File
 	fp, err = os.Open(targetFileName)
 	if err != nil {
 		log.Fatal(err)
-		os.Exit(1)
 	}
 	defer fp.Close()
 
@@ -71,7 +69,6 @@ func write(path string, fileName string, log []string) {
 func do(c *cli.Context) {
 	if len(c.Args()) == 0 {
 		log.Fatal("gc.log file path required.")
-		os.Exit(0)
 	}
 	log.Println("Start.")
 	path := c.Args()[0]
