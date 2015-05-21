@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"path/filepath"
 	"os"
+	"path/filepath"
 	"testing"
 )
 
@@ -31,7 +31,7 @@ func TestParseShouldParseLine(t *testing.T) {
 	logs = map[string][]string{}
 }
 
-func TestWriteShouldGenerateNewFile(t * testing.T) {
+func TestWriteShouldGenerateNewFile(t *testing.T) {
 	var curDir, _ = os.Getwd()
 	path := filepath.Join(curDir, "fixtures", "gc.log.0")
 	read(path)
